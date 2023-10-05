@@ -1,0 +1,25 @@
+{ 
+  "task":"univariate regression",
+  "hidden_layers": [
+    {
+      "neurons":50,
+      "activation_function":"relu"
+    },
+    {
+      "neurons":30,
+      "activation_function":"tanh"
+    },
+    {
+      "neurons":10,
+      "activation_function":"relu"
+    }
+],
+  "output_layer": {
+    "neurons": 1,
+    "activation_function":"relu"
+  },
+  "epochs": 1000,
+  "early_stopping": true,
+  "learning_rate": 0.001,
+  "loss_function": "mae"
+}
